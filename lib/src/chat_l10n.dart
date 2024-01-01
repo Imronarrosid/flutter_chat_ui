@@ -81,6 +81,22 @@ class ChatL10nEn extends ChatL10n {
   });
 }
 
+/// Indonesia l10n which extends [ChatL10n].
+@immutable
+class ChatL10nId extends ChatL10n {
+  /// Creates Indonesia l10n. Use this constructor if you want to
+  /// override only a couple of properties, otherwise create a new class
+  /// which extends [ChatL10n].
+  const ChatL10nId({
+    super.attachmentButtonAccessibilityLabel = 'Kirim media',
+    super.emptyChatPlaceholder = 'Belum ada pesan',
+    super.fileButtonAccessibilityLabel = 'File',
+    super.inputPlaceholder = 'Pesam',
+    super.sendButtonAccessibilityLabel = 'Kirim',
+    super.unreadMessagesLabel = 'Pesan belum dibaca',
+  });
+}
+
 /// Spanish l10n which extends [ChatL10n].
 @immutable
 class ChatL10nEs extends ChatL10n {
