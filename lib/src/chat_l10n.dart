@@ -91,7 +91,7 @@ class ChatL10nId extends ChatL10n {
     super.attachmentButtonAccessibilityLabel = 'Kirim media',
     super.emptyChatPlaceholder = 'Belum ada pesan',
     super.fileButtonAccessibilityLabel = 'File',
-    super.inputPlaceholder = 'Pesam',
+    super.inputPlaceholder = 'Pesan',
     super.sendButtonAccessibilityLabel = 'Kirim',
     super.unreadMessagesLabel = 'Pesan belum dibaca',
   });
