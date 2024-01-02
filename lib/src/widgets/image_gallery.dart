@@ -50,12 +50,8 @@ class ImageGallery extends StatelessWidget {
       );
 
   @override
-  Widget build(BuildContext context) => PopScope(
-        onPopInvoked: (didPop) {
-          if (didPop) {
-            onClosePressed();
-          }
-        },
+  Widget build(BuildContext context) => WillPopScope(
+        onWillPop: () => Future.sync(() => true),
         child: Dismissible(
           key: const Key('photo_view_gallery'),
           direction: DismissDirection.down,
