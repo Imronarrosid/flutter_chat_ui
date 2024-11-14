@@ -199,6 +199,16 @@ class _InputState extends State<Input> {
                       minLines: 1,
                       maxLength: widget.options.maxLength,
                       onChanged: widget.options.onTextChanged,
+                      buildCounter: (
+                        context, {
+                        required currentLength,
+                        required isFocused,
+                        required maxLength,
+                      }) =>
+                          const SizedBox(
+                        height: 0,
+                        width: 0,
+                      ),
                       onTap: widget.options.onTextFieldTap,
                       style: InheritedChatTheme.of(context)
                           .theme
