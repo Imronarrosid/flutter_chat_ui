@@ -197,6 +197,7 @@ class _InputState extends State<Input> {
                       keyboardType: widget.options.keyboardType,
                       maxLines: 5,
                       minLines: 1,
+                      maxLength: widget.options.maxLength,
                       onChanged: widget.options.onTextChanged,
                       onTap: widget.options.onTextFieldTap,
                       style: InheritedChatTheme.of(context)
@@ -267,6 +268,7 @@ class InputOptions {
     this.autofocus = false,
     this.enableSuggestions = true,
     this.enabled = true,
+    this.maxLength,
   });
 
   /// Controls the [Input] clear behavior. Defaults to [InputClearMode.always].
@@ -305,4 +307,7 @@ class InputOptions {
 
   /// Controls the [TextInput] enabled behavior. Defaults to [true].
   final bool enabled;
+
+  /// Set input max length.
+  final int? maxLength;
 }
